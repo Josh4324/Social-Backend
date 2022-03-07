@@ -43,6 +43,7 @@ async generateToken(payload, JWT_EXPIRES_IN = expires ){
       return next();
 
     } catch (err) {
+      console.log("expired")
       const response = new Response(
         false,
         401,
